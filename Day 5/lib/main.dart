@@ -1,4 +1,10 @@
+// import 'package:flutter/cupertino.dart';
+// import 'package:day_5/day5/day5.dart';
 import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MaterialApp());
+}
 
 class Day5 extends StatelessWidget {
   const Day5({super.key});
@@ -8,13 +14,13 @@ class Day5 extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xFF7854F4),
+        backgroundColor: const Color(0xFF7854F4),
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {},
-            icon: Icon(Icons.menu),
+            icon: const Icon(Icons.menu),
           ),
-          title: Center(
+          title: const Center(
             child: Text(
               'My App ',
               style: TextStyle(
@@ -26,9 +32,9 @@ class Day5 extends StatelessWidget {
           ),
           elevation: 5.0,
           backgroundColor: Colors.blueAccent,
-          shadowColor: Color.fromARGB(255, 0, 8, 20).withOpacity(0.5),
+          shadowColor: const Color.fromARGB(255, 0, 8, 20).withOpacity(0.5),
         ),
-        body: Padding(
+        body: const Padding(
           padding: EdgeInsets.all(18.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
